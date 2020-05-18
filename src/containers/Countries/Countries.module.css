@@ -1,0 +1,10 @@
+.Select {
+  width: 60% !important;
+}
+
+@media (max-width: 500px) {
+  
+  .Select {
+    width: 100% !important;
+  }
+}

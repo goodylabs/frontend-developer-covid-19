@@ -1,0 +1,30 @@
+.Loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 100;
+}
+
+.Svg {
+  margin: auto;
+  display: block;
+  shape-rendering: auto;
+  animation-play-state: running;
+  animation-delay: 0s;
+}
+
+.Circle {
+  animation-play-state: running;
+  animation-delay: 0s;
+}
+
+.Animate {
+  animation-play-state: running;
+  animation-delay: 0s;
+}
