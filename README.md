@@ -3,8 +3,7 @@
 
 #### To run this application locally follow these steps
 
-First you have to install Node.js with NPM
-Clone this repository to your computer and navigate into it's root directory
+First you have to install Node.js with NPM, then clone or download this repository to your computer and navigate into it's root directory
 
 Run
 ```
