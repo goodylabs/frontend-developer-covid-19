@@ -21,10 +21,11 @@ yarn start
 ```
 Navigate to http://localhost:3000
 
-#### You can also view this app at ...
+#### You can also view this app at https://zen-murdock-be9751.netlify.app
 
 
 ### Todo
 - cache API data or create a proxy like server so there won't be 'Too many requests' error anymore
-- better map markers (smallest will disapear when zoomed out)
+- better map markers (smallest will disappear when zoomed out)
 - better chart appearance on small devices 
+- Fix broken layout on Xiaomi browser
