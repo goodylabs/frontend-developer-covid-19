@@ -19,8 +19,12 @@ class App extends React.Component {
     const { data } = this.state;
     return (
     <div className={styles.container}>
+      <h3>Dane dot. zachorowań na COVID-19 na całym świecie</h3>
       <Cards data={data}/>
-      <Chart />
+      <h3>Wykres przedstwia globalne statystyki dot. liczby zainfekowanych osób oraz zgonów. </h3>
+      Pogląd wykresu możemy modyfikować przyciskając: Zainfekowani / Zgony, znajdujące się na górnej belce.
+      <br /> <br /> <br />
+       <Chart />
     </div>
     )
   }
