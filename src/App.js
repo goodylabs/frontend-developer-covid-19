@@ -2,6 +2,7 @@ import React from 'react';
 import { Cards, Chart } from './components';
 import styles from './App.module.css';
 import {fetchData} from './api';
+import coronaImg from './images/covidimg.png';
 
 class App extends React.Component {
   state = {
@@ -19,12 +20,17 @@ class App extends React.Component {
     const { data } = this.state;
     return (
     <div className={styles.container}>
-      <h3>Dane dot. zachorowań na COVID-19 na całym świecie</h3>
+      <img className={styles.image} src={coronaImg} alt="COVID-19"/>
+      <h3 className={styles.titletxt}>Dane dot. zachorowań na COVID-19 na całym świecie</h3>
+
       <Cards data={data}/>
-      <h3>Wykres przedstwia globalne statystyki dot. liczby zainfekowanych osób oraz zgonów. </h3>
-      Pogląd wykresu możemy modyfikować przyciskając: Zainfekowani / Zgony, znajdujące się na górnej belce.
+      
+      <h3 className={styles.titletxt}>Wykres przedstwia globalne statystyki dot. liczby zainfekowanych osób oraz zgonów. </h3>
+      <span className={styles.titletxt}>Pogląd wykresu możemy modyfikować przyciskając: Zainfekowani / Zgony, znajdujące się na górnej belce.</span>
       <br /> <br /> <br />
+      
        <Chart />
+    
     </div>
     )
   }
