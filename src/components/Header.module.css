@@ -1,0 +1,50 @@
+header{
+    display: flex;
+    position: sticky;
+    top:0;
+    background-color: var(--header-color);
+    height: 60px;
+    /* border-bottom: 1px solid rgb(214, 214, 214); */
+    box-shadow: 0 5px 20px rgba(0,0,0,.07);
+    width: 100%;
+    padding: 15px 0;
+    z-index:10;
+}
+
+.LogoContainer{
+display: flex;
+align-items: center;}
+
+.LogoContainer_icon{
+margin-right: 15px;
+}
+
+.LogoContainer_logo{
+   font-weight: 500;
+    font-size: 1.5rem;
+}
+
+/*######################### MEDIA ######################### */
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+    .LogoContainer_icon{
+        margin-right: 20px;
+        }
+    header{
+        height: 60px;
+    }
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+    header{
+        height: 65px;
+    }
+}

@@ -1,0 +1,67 @@
+.Root{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: 100%;
+}
+
+.CounterContainer {
+  display: flex;
+  font-size: 1.3rem;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.CounterItem_new{
+    font-size: 1.15rem;
+    color: var(--text-color-light);
+}
+.CounterItem_cases{
+  position: relative;
+  margin: 3px 0;
+  font-weight: 600;
+  padding-left: 15px;
+}
+
+.CounterItem_cases::before{
+  position: absolute;
+  left: 0;
+  bottom: 55%;
+  height: 10px;
+  width: 10px;
+  margin-top:auto;
+  margin-bottom: -8px;
+  content: '';
+  border-radius: 30px;
+}
+
+.CounterItem___casesdeaths::before{
+  background: #f44336;
+}
+.CounterItem___casesrecovered::before{
+  background: #2196f3;
+}
+.CounterItem___casesactive::before{
+  background: #ffeb3b;
+}
+.CounterItem___casesconfirmed::before{
+  background: #ff9800;
+}
+
+.CounterItem {
+  display: flex;
+  margin-bottom: 15px;
+  flex: 0 0 50%;
+}
+
+.CounterItem > div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.numOfCases {
+  display: block;
+  text-align: right;
+  margin-left: 10px;
+}
