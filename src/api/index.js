@@ -16,7 +16,7 @@ export const fetchData = async() => {
         return modifiedData;
 
     } catch (error) {
-
+        console.log(error)
     }
 }
 
@@ -32,6 +32,30 @@ export const fetchDailyData = async () => {
       
         return modifiedDailyData
     } catch(error) {
+        console.log(error)
+    }
+}
 
+export const fetchCountries = async() => {
+    try{
+
+        const {data: {Countries}} = await axios.get(url);
+       // const {Countries} = await axios.get(url);
+       
+        // //--
+        // const modifiedCountriesData = Countries.map((CountryData) => ({
+        //     Country: CountryData.Country,
+        //     CountryCode: CountryData.CountryCode
+        // }))
+        // console.log(modifiedCountriesData)
+        // return modifiedCountriesData
+        // //--
+
+        const result = Countries.map((country) => country.Country)
+        console.log(result)
+        return result
+
+    } catch (error) {
+        console.log(error)
     }
 }

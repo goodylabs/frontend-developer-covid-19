@@ -16,3 +16,12 @@ body {
     margin-top: 20px;
     margin-bottom: 10px;
 }
+
+@media (max-width: 770px) {
+    .container {
+        margin: 0 10%;
+    }
+    .image {
+        width: 100%; 
+     }
+}

@@ -1,27 +1,39 @@
-import React from 'react';
-import { Cards, Chart } from './components';
+import React, {useEffect} from 'react';
+import { Cards, Chart, CountryList } from './components';
+import AppCountry from './AppCountry'
 import styles from './App.module.css';
 import {fetchData} from './api';
+import { Card, CardContent, Typography, Grid } from '@material-ui/core';
+
 import coronaImg from './images/covidimg.png';
+import axios from 'axios';
 
 class App extends React.Component {
   state = {
-    data: {}
+    data: {},
+    country: ''
   }
   async componentDidMount()
   {
     const fetchedData = await fetchData();
    //console.log(fetchedData);
 
+
     this.setState({ data: fetchedData })
   }
-  
+//---
+  handleCountryChange = async(country) => {
+    console.log(country)
+ 
+  }
+ //---
+
   render() {
     const { data } = this.state;
     return (
     <div className={styles.container}>
       <img className={styles.image} src={coronaImg} alt="COVID-19"/>
-      <h3 className={styles.titletxt}>Dane dot. zachorowań na COVID-19 na całym świecie</h3>
+      <h2 className={styles.titletxt}>Dane dot. zachorowań na COVID-19 na całym świecie</h2>
 
       <Cards data={data}/>
       
@@ -29,8 +41,14 @@ class App extends React.Component {
       <span className={styles.titletxt}>Pogląd wykresu możemy modyfikować przyciskając: Zainfekowani / Zgony, znajdujące się na górnej belce.</span>
       <br /> <br /> <br />
       
+
        <Chart />
-    
+
+       <h2 className={styles.titletxt}>Sprawdź statystyki dla poszczególnych Państw:</h2>
+       
+      {/* <AppCountry /> */}
+
+      <CountryList handleCountryChange={this.handleCountryChange} /> 
     </div>
     )
   }

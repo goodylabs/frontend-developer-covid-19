@@ -1,0 +1,7 @@
+.container {
+    display: flex;
+}
+.titletxt {
+    text-align: center;
+    margin-top: 40px;
+}
