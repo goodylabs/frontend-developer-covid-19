@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<List /> Should render and match the snapshot 1`] = `
+<ul
+  class="sc-AxjAm jwWEQX"
+>
+  <li
+    class="sc-AxirZ ggiwpy"
+  >
+    Poland
+  </li>
+</ul>
+`;

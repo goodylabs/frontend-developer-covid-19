@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CustomTooltip /> Should render and match the snapshot with data 1`] = `
+<div
+  class="sc-AxirZ bslVYb"
+>
+  <h4
+    class="sc-AxjAm frcPRK"
+  >
+    Country name
+  </h4>
+  <div
+    class="sc-AxiKw bOTXee"
+  >
+    <div
+      class="sc-AxirZ sc-AxhCb bDKeGG"
+    >
+      <span
+        class="sc-AxgMl jhmlNC"
+        color="primary"
+      >
+        Total cases: 100
+      </span>
+      <span
+        class="sc-AxgMl dYwBJV"
+        color="secondary"
+      >
+        Total deaths: 10
+      </span>
+      <span
+        class="sc-AxgMl imlJVq"
+      >
+        Total recovered: 40
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<CustomTooltip /> Should render and match the snapshot without data 1`] = `
+<div
+  class="sc-AxirZ bslVYb"
+>
+  <h4
+    class="sc-AxjAm frcPRK"
+  >
+    No data
+  </h4>
+  <div
+    class="sc-AxiKw bOTXee"
+  >
+    No data available
+  </div>
+</div>
+`;
+
+exports[`<MapChart /> Should render and match the snapshot 1`] = `
+<svg
+  class="rsm-svg "
+  data-tip=""
+  viewBox="0 0 800 420"
+>
+  <g
+    class="rsm-geographies "
+  />
+</svg>
+`;
