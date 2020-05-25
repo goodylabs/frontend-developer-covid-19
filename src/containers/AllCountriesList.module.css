@@ -1,0 +1,30 @@
+.summaryRow{
+    display: flex;
+    /* margin-bottom: 0; */
+}
+
+.searchBar{
+    margin: 10px 0 20px 0;
+    display: flex;
+}
+
+
+
+/*######################### MEDIA ######################### */
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+    .searchBar{
+        margin: 25px 0 30px 0;
+        justify-content: flex-end;
+    }
+
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}

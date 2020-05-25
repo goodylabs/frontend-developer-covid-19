@@ -1,0 +1,82 @@
+.Cases {
+  display: flex;
+  justify-content: baseline;
+}
+.Link:hover .CountryItem {
+  background-color: var(--background-color-selected);
+  color: var(--text-color-normal);
+}
+
+.CountryItem {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--text-color-vlight);
+  padding-bottom: 0;
+  background-color: var(--background-color-sec);
+}
+
+.New {
+  color: var(--text-color-light);
+}
+
+.Row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.Row_name {
+  flex-basis: 100%;
+}
+
+.Row_cases {
+  flex-basis: 100%;
+}
+
+.Item {
+  flex: 1;
+  padding: 15px 0;
+  padding-left: 20px;
+  flex-basis: 1;
+}
+
+.Item_cases {
+  flex-basis: 33.33%;
+  padding-top: 10px;
+}
+
+.Item_cases:last-child{
+  padding-right: 10px;
+}
+
+.Item_country {
+  padding-left: 20px;
+  padding-bottom: 0;
+}
+/*######################### MEDIA ######################### */
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .Item_country {
+    padding-bottom: 15px;
+  }
+  .Item_cases {
+    padding-top: 15px;
+    padding-left: 0;
+  }
+  .Row_name {
+    flex-basis: 30%;
+  }
+
+  .Row_cases {
+    flex-basis: 70%;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
