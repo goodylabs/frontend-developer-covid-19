@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> Should render and match the snapshot 1`] = `
+<header
+  class="sc-AxirZ eJvLfk"
+>
+  <h1
+    class="sc-AxjAm iyJNFV"
+  >
+    COVID-19 Info
+  </h1>
+</header>
+`;

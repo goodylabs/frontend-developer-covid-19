@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Heading /> Should render main header and match the snapshot 1`] = `
+<h1
+  class="sc-AxjAm iyJNFV"
+>
+  Children
+</h1>
+`;
+
+exports[`<Heading /> Should render not main hedaer and match the snapshot 1`] = `
+<h1
+  class="sc-AxjAm cYlDMx"
+>
+  Children
+</h1>
+`;

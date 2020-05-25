@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Modal /> Should render and match the snapshot 1`] = `
+<div
+  class="sc-AxiKw gednU"
+>
+  <div
+    class="sc-AxirZ dUnkeb"
+  >
+    <h1
+      class="sc-AxjAm iyJNFV"
+    >
+      ERROR
+    </h1>
+    <p
+      class="sc-AxhCb qRYnP"
+    >
+      Server side error due to reached requests limit. Please wait a few seconds and refresh again.
+    </p>
+    <p
+      class="sc-AxhCb qRYnP"
+    />
+    <div
+      class="sc-AxhUy bzImaP"
+    />
+  </div>
+</div>
+`;
