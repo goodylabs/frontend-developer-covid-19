@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react';
 import { Cards, Chart, CountryList } from './components';
-import AppCountry from './AppCountry'
 import styles from './App.module.css';
 import {fetchData} from './api';
 import { Card, CardContent, Typography, Grid } from '@material-ui/core';
@@ -45,8 +44,12 @@ class App extends React.Component {
        <Chart />
 
        <h2 className={styles.titletxt}>Sprawdź statystyki dla poszczególnych Państw:</h2>
-       
-      {/* <AppCountry /> */}
+       <div>
+        <div className={styles.infected}>Zainfekowani</div>
+        <div className={styles.recovered}>Ozdrowieńcy</div>
+        <div className={styles.deaths}>Zgony</div>
+      </div>
+
 
       <CountryList handleCountryChange={this.handleCountryChange} /> 
     </div>

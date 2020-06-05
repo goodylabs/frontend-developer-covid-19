@@ -16,6 +16,40 @@ body {
     margin-top: 20px;
     margin-bottom: 10px;
 }
+.infected {
+    border-bottom: 10px solid rgba(0,0,255, 0.5) !important;
+    border: 1px solid rgba(0,0,255, 0.5);
+    padding: 10px;
+    float: left;
+    margin-top: 15px;
+    text-align: center;
+    margin-left: 15px;
+    font-size: 14px;
+    min-width: 70px;
+}
+.recovered {
+    border-bottom: 10px solid rgba(0,255,0, 0.5)!important;
+    border: 1px solid rgba(0,255,0, 0.5);
+    padding: 10px;
+    float: left;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 15px;
+    min-width: 70px;
+}
+.deaths {
+    border-bottom: 10px solid rgba(255,0,0, 0.5)!important;
+    border: 1px solid rgba(255,0,0, 0.5);
+    padding: 10px;
+    float: left;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 15px;
+    min-width: 70px;
+}
+
 
 @media (max-width: 770px) {
     .container {

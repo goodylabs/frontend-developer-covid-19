@@ -51,7 +51,18 @@ export const fetchCountries = async() => {
         // return modifiedCountriesData
         // //--
 
-        const result = Countries.map((country) => country.Country)
+      
+        const result = Countries.map((country) => ({
+            Country:country.Country, 
+            CountryCode: country.CountryCode,
+            TotalConfirmed: country.TotalConfirmed,
+            TotalRecovered: country.TotalRecovered,
+            TotalDeaths: country.TotalDeaths,
+            NewConfirmed: country.NewConfirmed,
+            NewRecovered: country.NewRecovered,
+            NewDeaths: country.NewDeaths,
+            Date: country.Date
+        }))
         console.log(result)
         return result
 
@@ -59,3 +70,4 @@ export const fetchCountries = async() => {
         console.log(error)
     }
 }
+
