@@ -1,11 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import styles from './CountryList.module.css';
-import {Card, CardContent, Typography, Grid} from '@material-ui/core'
+import {Card, CardContent, Typography, Grid, InputLabel, Input, FormHelperText} from '@material-ui/core'
 import {fetchCountries} from '../../api';
-import {NativeSelect, FormControl} from '@material-ui/core';
+import { FormControl} from '@material-ui/core';
 
 const CountryList = ( handleCountryChange ) =>{
     const[fetchedCountries, setFetchedCountries] = useState([]);
+    const[searchCountry, setSearchCountry] = useState("");
 
    useEffect(() => {
         const fetchAPI = async () => {
@@ -14,12 +15,22 @@ const CountryList = ( handleCountryChange ) =>{
         fetchAPI();
    }, [setFetchedCountries])
 
+    const filterCountry = fetchedCountries.filter(item=> {
+    return searchCountry != "" ? item.Country.includes(searchCountry) : item;
+    })
 
     return (
     <div className={styles.container}>
+
+    <FormControl>
+        <InputLabel htmlFor="my-input">Wyszukaj</InputLabel>
+        <Input id="my-input" aria-describedby="my-helper-text" onChange={e=>setSearchCountry(e.target.value)}/>
+        <FormHelperText id="my-helper-text">Wpisz pańswto, aby wyszukać</FormHelperText>
+    </FormControl>
+    <br/><br/><br/>
         <Grid container spacing={2} justify="center">
         
-            {fetchedCountries.map((country,i) => <CardContent item component={Card} key={i} className={styles.typo}> 
+            {filterCountry.map((country,i) => <CardContent item component={Card} key={i} className={styles.typo}> 
             <Typography> {country.CountryCode} </Typography>
                 <Typography variant="h5" className={styles.typo}>
                     {country.Country}
