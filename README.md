@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +67,10 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+=======
+Projekt zawiera globalne statystyki dotyczące zachorowań, wyzdrowień oraz zgonów na Covid-19. Dane wraz z informacją o dacie aktualizacji są umieszczone na kartach u góry strony. Poniżej znajduje się wykres. Pod wykresem znajduje się lista państw ze statystykami.
+
+![1](https://raw.githubusercontent.com/AleksandraMiazek/frontend-developer-covid-19/master/screeny_aplikacji/screen1.png)
+![2](https://raw.githubusercontent.com/AleksandraMiazek/frontend-developer-covid-19/master/screeny_aplikacji/screen2.png)
+![3](https://raw.githubusercontent.com/AleksandraMiazek/frontend-developer-covid-19/master/screeny_aplikacji/screen3.png)
+>>>>>>> bb96cf37f982f8ae9a31130b8ac4894232d982b5

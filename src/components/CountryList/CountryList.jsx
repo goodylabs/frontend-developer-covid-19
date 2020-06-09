@@ -15,6 +15,7 @@ const CountryList = ( handleCountryChange ) =>{
         fetchAPI();
    }, [setFetchedCountries])
 
+<<<<<<< HEAD
 const filterCountry = fetchedCountries.filter(item=> {
     return searchCountry !== "" ? item.Country.includes(searchCountry) : item;
    
@@ -30,6 +31,21 @@ const filterCountry = fetchedCountries.filter(item=> {
     </FormControl>
     
         <br/><br/><br/>
+=======
+    const filterCountry = fetchedCountries.filter(item=> {
+    return searchCountry != "" ? item.Country.includes(searchCountry) : item;
+    })
+
+    return (
+    <div className={styles.container}>
+
+    <FormControl>
+        <InputLabel htmlFor="my-input">Wyszukaj</InputLabel>
+        <Input id="my-input" aria-describedby="my-helper-text" onChange={e=>setSearchCountry(e.target.value)}/>
+        <FormHelperText id="my-helper-text">Wpisz pańswto, aby wyszukać</FormHelperText>
+    </FormControl>
+    <br/><br/><br/>
+>>>>>>> bb96cf37f982f8ae9a31130b8ac4894232d982b5
         <Grid container spacing={2} justify="center">
         
             {filterCountry.map((country,i) => <CardContent item component={Card} key={i} className={styles.typo}> 

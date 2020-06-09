@@ -2,7 +2,11 @@ import React, {useEffect} from 'react';
 import { Cards, Chart, CountryList } from './components';
 import styles from './App.module.css';
 import {fetchData} from './api';
+<<<<<<< HEAD
 import { Card, CardContent, Typography, Grid, FormControl, InputLabel, Input, FormHelperText } from '@material-ui/core';
+=======
+import { Card, CardContent, Typography, Grid } from '@material-ui/core';
+>>>>>>> bb96cf37f982f8ae9a31130b8ac4894232d982b5
 
 import coronaImg from './images/covidimg.png';
 import axios from 'axios';
@@ -49,8 +53,12 @@ class App extends React.Component {
         <div className={styles.recovered}>Ozdrowieńcy</div>
         <div className={styles.deaths}>Zgony</div>
       </div>
+<<<<<<< HEAD
      
       
+=======
+
+>>>>>>> bb96cf37f982f8ae9a31130b8ac4894232d982b5
 
       <CountryList handleCountryChange={this.handleCountryChange} /> 
     </div>

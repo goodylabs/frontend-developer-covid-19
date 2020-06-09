@@ -1,10 +1,16 @@
 .container {
+<<<<<<< HEAD
     margin: 20px 0px 50px 0px;
     text-align: center;
 }
 .searchContainer {
     width: 400px;
 }
+=======
+    margin: 50px 0;
+    text-align: center;
+}
+>>>>>>> bb96cf37f982f8ae9a31130b8ac4894232d982b5
 .titletxt {
     text-align: center;
     margin: 50px;

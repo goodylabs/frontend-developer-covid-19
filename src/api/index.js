@@ -40,6 +40,20 @@ export const fetchCountries = async() => {
     try{
 
         const {data: {Countries}} = await axios.get(url);
+<<<<<<< HEAD
+=======
+       // const {Countries} = await axios.get(url);
+       
+        // //--
+        // const modifiedCountriesData = Countries.map((CountryData) => ({
+        //     Country: CountryData.Country,
+        //     CountryCode: CountryData.CountryCode
+        // }))
+        // console.log(modifiedCountriesData)
+        // return modifiedCountriesData
+        // //--
+
+>>>>>>> bb96cf37f982f8ae9a31130b8ac4894232d982b5
       
         const result = Countries.map((country) => ({
             Country:country.Country, 
