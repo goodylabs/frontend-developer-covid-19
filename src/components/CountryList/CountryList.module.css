@@ -1,5 +1,9 @@
 .container {
-    margin: 50px 0;
+    margin: 20px 0px 50px 0px;
+    text-align: center;
+}
+.searchContainer {
+    width: 400px;
 }
 .titletxt {
     text-align: center;
